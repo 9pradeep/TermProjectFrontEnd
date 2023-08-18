@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Profile</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <div id="signup">
+        <h1>User Profile</h1>
+
+        <form class="form Updateprof" method="post">
+
+            <div class="top-row">
+                <div class="field-wrap">
+                    <h3>Firstname</h3>
+                    <input type="text" placeholder="Firstname" required autocomplete="off" id="fname" name="Fname" />
+                </div>
+
+                <div class="field-wrap">
+                    <h3>MiddleName</h3>
+                    <input type="text" placeholder="MiddleName" required autocomplete="off" id="mname" name="Lname" />
+                </div>
+
+
+            </div>
+            <div class="field-wrap">
+                <h3>Lastname</h3>
+                <input type="text" placeholder="Lastname" required autocomplete="off" id="lname" />
+            </div>
+            <div class="field-wrap">
+                <h3>Username</h3>
+                <input type="text" placeholder="Username" required autocomplete="off" id="uname" />
+            </div>
+
+            <div class="field-wrap">
+                <h3>Userdescription</h3>
+                <input type="text" placeholder="Userdescription" required autocomplete="off" id="udesc" />
+            </div>
+
+
+            <div class="field-wrap">
+                <h3>Age</h3>
+                <input type="number" placeholder="Age" required autocomplete="off" id="age" />
+            </div>
+
+            <div class="field-wrap">
+                <h3>Sex</h3>
+                <input type="text" placeholder="Sex" required autocomplete="off" id="sex" />
+
+            </div>
+
+            <div class="field-wrap">
+                <h3>Nationality</h3>
+                <input type="text" placeholder="Nationality" required autocomplete="off" id="nationality" />
+            </div>
+
+            <div class="field-wrap">
+                <h3>Password</h3>
+                <input type="password" placeholder="Password" required autocomplete="off" id="pass" />
+            </div>
+            <div class="field-wrap">
+                <h3>Profileimage</h3>
+                <!-- <label>
+                  Recipe Image<span class="req">*</span>
+                </label> -->
+                <input type="file" name="ProfileImage" required autocomplete="off" id="profileimg" />
+
+            </div>
+
+            <button name="submit" class="button button-block" id="updatebtn">Update Profile</button>
+
+        </form>
+    </div> <!-- /form -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="scripts/updateprofile.js"></script>
+
+</body>
+</html>

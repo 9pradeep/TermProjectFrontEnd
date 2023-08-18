@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Product Details</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <!-- <link href="css/heroic-features.css" rel="stylesheet"> -->
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="dashboard.html"><img src="images/ecom.png" width="100px" height="60px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="dashboard.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profiling.html">Profile</a>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container form1">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4" id="posttitle"></h1>
+
+        <!-- Author -->
+        <p class="lead">
+          Product owned by
+          <h3 class="mt-4" id="username"></h3>
+        </p>
+
+        <hr>
+        <hr>
+
+        <!-- Preview Image -->
+        <div id="showrecpimg"></div>
+
+        <hr>
+        <div class="row">
+          <div class="col-ld-6 col-md-12">
+            <h4 class="mt-4">Likes</h4>
+            <h4 class="mt-4" id="likecount"></h4>
+          </div>
+          <div class="col-ld-6 col-md-12">
+            <h4 class="mt-4">Total Rating</h4>
+            <h4 class="mt-4" id="totalrating"></h4>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-11 form1">
+            <button type="button" class="col-lg-2 col-md-12 btn btn-info" id="likebtn">Like</button>
+            <button type="button" class="col-lg-3 col-md-12 btn btn-warning" id="unlikebtn">Unlike</button>
+            <button type="button" class="col-lg-3 col-md-12 btn btn-danger" data-toggle="modal"
+              data-target="#myModal">Leave a Review</a></button>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Give Your Rating</h4>
+
+                  </div>
+                  <div class="modal-body">
+                    <label>
+                      Rating
+                    </label>
+                    <input type="number" name="rate" min="1" max="5" id="rate" />
+                    <label>
+                      Comment
+                    </label>
+                    <input type="text" name="comment" id="comment" />
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="commentbtn">Send review</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Post Content -->
+        <br>
+        <br>
+        <div class="card my-4">
+          <h5 class="card-header">Product review:</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12" id="raw1">
+
+
+                  </div>
+                  <div class="col-lg-6 col-md-12" id="raw2">
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12" id="raw3">
+
+
+                  </div>
+                  <div class="col-lg-6 col-md-12" id="raw4">
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12" id="raw5">
+
+
+                  </div>
+                  <div class="col-lg-6 col-md-12" id="raw6">
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12" id="raw7">
+
+
+                  </div>
+                  <div class="col-lg-6 col-md-12" id="raw8">
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12" id="raw9">
+
+
+                  </div>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+        <hr class="light">
+
+        <blockquote class="blockquote">
+          <div class="card my-4">
+            <h5 class="card-header">Directions:-</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <p id="direction"></p>
+                </div>
+
+              </form>
+            </div>
+          </div>
+          <div class="card my-4">
+            <h5 class="card-header"></h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                      <footer class="blockquote-footer"> Used Duration:-
+                        <cite title="Source Title" id="duration"></cite>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <footer class="blockquote-footer">Price:-
+                        <cite title="Source Title" id="difficulty"></cite>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                      <footer class="blockquote-footer" id="Distance from owner">Distance from owner:-
+                        <cite title="Source Title"></cite>
+                    </div>
+                    </footer>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+
+          <hr class="light">
+
+
+
+        </blockquote>
+
+
+
+        <!-- Comments Form -->
+        <h3>Rating and Comments</h3>
+        <!-- Single Comment -->
+        <div id="commentsection"></div>
+
+
+
+
+
+      </div>
+
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Search Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Add to my Wishlist</h5>
+          <div class="card-body">
+
+            <!-- <input type="text" class="form-control" placeholder="Search for..."> -->
+
+            <button class="btn btn-primary" type="submit" id="addtowish">Add to my Wishlist!</button>
+
+
+          </div>
+        </div>
+
+        <!-- Categories Widget -->
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Pradeep e-Commerce</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+
+  <!-- <script src="bootstrap/jquery/jquery.min.js"></script>
+  
+
+  <script src="bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script> -->
+
+  <script src="bootstrap/jquery/jquery.min.js"></script>
+  <script src="scripts/recipedetails.js"></script>
+  <!-- <script src="scripts/index.js"></script> -->
+  <script src="bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
